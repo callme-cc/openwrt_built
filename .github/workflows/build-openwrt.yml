@@ -57,5 +57,4 @@ jobs:
       if: github.ref == 'refs/heads/main'  # 仅 main 分支触发
       with:
         files: openwrt/bin/targets/**/*.img.gz  # 上传所有固件
-        name: ${{ steps.bump_version.outputs.new_version }}
-        tag_name: ${{ steps.bump_version.outputs.new_version }}
+
